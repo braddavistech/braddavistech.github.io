@@ -1,0 +1,237 @@
+<html>
+<head>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arbutus Slab'>
+<style>
+	
+	@media screen and (max-width: 1125px){
+	* {
+		margin:0;
+		padding:0;
+	}
+	#background{
+		display:none;
+	}
+	.footer{
+		display:none;
+	}
+	.title{
+		position:static;
+		width:100vw;
+		color:black;
+		font-family:Arbutus Slab;
+		font-style:bold;
+		font-size:8vw;
+		margin-top:0.5vw;
+		text-align:center;		
+		line-height:1;
+	}
+	#tagline{
+		display:none;
+	}
+	.navbuttons{
+		margin-top:1.5vw;
+		position:relative;
+		background:white;
+		width:100vw;
+		text-align:center;
+		z-index:9;
+	}
+	.navbuttons a img{
+		opacity:0.7;
+		width:7vw;
+		height:7vw;
+		padding-left:5vw;
+		padding-right:5vw;
+		border-radius:50%;
+	}
+	.navbuttons a img:hover{
+		opacity:1;
+	}
+	#portfolioname{
+		position:relative;
+		height:1;
+		font-family:Arbutus Slab;
+		font-style:bold;
+		font-size:8vw;
+		text-align:center;
+		margin-top:3vw;
+		margin-bottom:0vw;
+	}
+	#work{
+		position:relative;
+		color:black;
+		width:95vw;
+		margin-top:12vw; 	
+		margin-left:2.5vw; 
+		margin-right:2.5vw; 
+		margin-bottom:2vw; 
+		padding-bottom:0vw;
+		font-size:4vw; 		
+		text-align:center;
+		z-index:5; 
+	}
+	#work a{
+		position:relative;
+		font-size:6vw;
+		width:100vw;
+		height:1;
+		
+		padding-top:-1.5vw;
+	}
+	#workpic{
+		width:80vw;
+		margin-top:-2vw;
+		margin-bottom:-2vw;
+		outline-style:solid;
+		outline-color:black;
+		outline-width:1vw;
+	}
+	}
+	
+	
+	@media only screen and (min-width: 1126px){
+	* {
+		margin:0px;
+		padding:0px;
+	}
+	#background{
+		position:fixed;
+		bottom:0px;
+		margin-left:0px;
+		margin-bottom:0px;
+		width:100vw;
+		opacity:1;
+		z-index:1;
+	}
+	.footer{
+		position:fixed;
+		bottom:0px;
+		height:1.5vw;
+		width:100vw;
+		color:white;
+		background:black;
+		font-style:bold;
+		font-size:1vw;
+		padding-top:0.5vw;
+		text-align:center;
+		line-height:1;
+		z-index:6;
+	}
+	.title{
+		position:static;
+		width:100vw;
+		color:black;
+		font-family:Arbutus Slab;
+		font-style:bold;
+		font-size:7vw;
+		margin-top:1.25vw;
+		text-align:center;
+		line-height:1;
+	}
+	#tagline{
+		position:static;
+		width:100vw;
+		color:black;
+		font-family:Arbutus Slab;
+		font-style:bold;
+		font-size:3vw;
+		margin-top:0vw;
+		text-align:center;
+		line-height:1;
+	}
+	.navbuttons{
+		margin-top:1.5vw;
+		position:relative;
+		background:white;
+		width:100vw;	
+		text-align:center;
+		opacity:0.9;
+		z-index:9;
+	}
+	.navbuttons a img{
+		opacity:0.7;
+		width:3.5vw;
+		height:3.5vw;
+		padding-left: 4.5vw;
+		padding-right: 4.5vw;
+		border-radius:50%;
+	}
+	.navbuttons a img:hover{
+		opacity:1;
+	}
+	#portfoliobackground{
+		position:relative;
+		padding-top:1.5vw;
+		background:white;
+		z-index:5;
+		opacity:0.9;
+	}
+	#portfolioname{
+		position:relative;
+		height:1;
+		font-family:Arbutus Slab;
+		font-style:bold;
+		font-size:4vw;
+		text-align:center;
+		margin-top:1vw;
+		margin-bottom:0vw;
+	}
+	#work{
+		position:relative;
+		background:white;
+		color:black;
+		width:80vw;
+		margin-top:7vw;
+		margin-left:10vw;
+		margin-right: 10vw;
+		padding-bottom:5vw;
+		font-size:2vw;
+		text-align:center;
+		z-index:5; 
+		opacity:.9;
+	}
+	#work a{
+		position:relative;
+		font-size:2vw;
+		width:100vw;
+		height:1;
+		margin-bottom:1vw;
+	}
+	#workpic{
+		width:50vw;
+		margin-top:0vw;
+		opacity:1;
+		outline-style:solid;
+		outline-color:black;
+		outline-width:0.25vw;
+	}
+	}
+</style>
+<head>
+<body>
+	<p class="title">BRAD DAVIS</p>
+	<p id="tagline">Simple. Clean. Code.</p>
+	<div class="navbuttons">		
+		<a href="http://www.braddavistech.com"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/homenav.jpg" alt="Home Page"></a>
+		<a href="https://www.linkedin.com/in/braddavistech/" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/linkedinnav.jpg" alt="LikedIn"></a>
+		<a href="https://github.com/braddavistech" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/githubnav.jpg" alt="GitHub"></a>
+		<a href="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/Brad%20Davis.pdf" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/documentnav.jpg" alt="Resume"></a>
+		<a href="https://www.radbraddavis.com" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/bloggernav.jpg" alt="Blog"></a>
+	</div>
+	<div id="portfoliobackground">
+		<p id="portfolioname">PORTFOLIO</p>
+			<p id="work"><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/osugame.JPG" id="workpic"><br><br>
+			<a href="https://braddavistech.github.io/OSU-Game-css-html-javascript/" alt="OSU Game Image">Click Here To Play</a><br>
+			<br>This game reflects my first work with Javascript. It also uses HTML and CSS. The space bar makes Brutus jump and the left and right arrows make him move. The object is to score 100 points and collect the trophy. Be careful of the penalty flags as they will take points away. <br>(Mobile devices are not currently supported.)
+ 		</p>
+		<p id="work"><br><br><img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/ECC.jpg" id="workpic"><br><br>
+			<a href="www.empowermentcommunitychurch.org" alt="ECC Website">Click Here For Site</a><br>
+			<br>This is the first site that I have created for an organization. It is currently a WordPress design with some custom CSS stylings. I am working on a complete revision using HTML and CSS to allow for absolute creative control.
+ 		<br></p>
+	</div>
+	<img src="https://cdn.rawgit.com/braddavistech/website/gh-pages/images/Nashville.JPG" id="background">
+	<div class="footer">
+		<h4> Coding performed by Brad Davis, Copyright BradDavisTech.com 2018.</h4> 
+	</div>
+</body>
+</html>
