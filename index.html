@@ -64,13 +64,28 @@
 		margin:0px;
 		padding:0px;
 	}
+      	#imageBackground{
+	      	position:fixed;
+	      	top:20vw;
+		width: 100vw;	
+	      	opacity:1;
+      	}
+      	#headerBackground{
+	      	position:relative;
+	      	top:0vw;
+	      	background-color:#5A6E40;	
+	      	z-index:3;
+	      	height:20vw;
+	      	opacity:1;
+      	}
 	.title{
 		position:static;
 		margin:0vw;
 		padding:0vw;
 		text-align:center;
 		font-style:bold;
-		font-size:10vw;
+		font-size:20vw;
+	      	color:white;
 		width:100vw;		
 		line-height:1;
 		z-index:4;
@@ -79,7 +94,7 @@
 		position:static;
 		margin:0vw;
 		font-family:Arbutus Slab;
-		font-size:5vw;
+		font-size:10vw;
 		width:100vw;
 		text-align:center;
 		line-height:1;
@@ -103,15 +118,15 @@
 	.navbuttons a img:hover{
 		opacity:1;
 	}
-	#background{
+      	#footerBackground{
 		position:fixed;
-		padding-bottom:0px;
-		margin-bottom:0px;													  		
-		bottom:-10px;
-		width:100vw;
-		opacity:1;
-		z-index:1;
-	}
+	      	background-color:#5A6E40;	
+	      	z-index:10;
+	      	width: 100vw;
+	      	height:5vw;
+	      	bottom: 0px;
+	      	opacity:1;
+      	}
 	.footer{
 		display:none;
 	}
@@ -184,16 +199,6 @@
 	.navbuttons a img:hover{
 		opacity:.5;
 	}
-	#background{
-		position:fixed;
-		bottom:0px;
-		padding:0px;													  	
-		margin-bottom:0px;
-		width:100vw;
-		line-height:1;
-		opacity:1;
-		z-index:1;
-	}
 	#footerBackground{
 		position:fixed;
 	      	background-color:#5A6E40;	
@@ -228,10 +233,8 @@
 		<a href="https://www.linkedin.com/in/braddavistech/" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Linkedinnav.jpg" alt="LikedIn"></a>
 		<a href="https://github.com/braddavistech" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Githubnav.jpg" alt="GitHub"></a>
 		<a href="https://www.braddavistech.com/PortfolioPage/" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Briefcase.png" alt="Portfolio"></a>
-		<a href="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/9875f6d1/images/Brad%20Davis.pdf" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Documentnav.jpg" alt="Resume"></a>
-		
+		<a href="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/9875f6d1/images/Brad%20Davis.pdf" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Documentnav.jpg" alt="Resume"></a>	
 	</div>
-	<!--<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/Nashville.JPG" id="background">-->
 	
  	<div id="footerBackground"></div>
 	<h4 class="footer"> Coded by Brad Davis, BradDavisTech.com 2018.</h4> 
