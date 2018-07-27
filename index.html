@@ -128,36 +128,39 @@
 		width: 100vw;	
 	      	z-index:1;
       	}
+      	#headerBackground{
+		position:relative;
+	      	background-color:#5A6E40;	
+	      	z-index:3;
+	      	height:12.5vw;
+      	}
 	.title{
 		position:relative;
 	      	width:100vw;
 		color:white;
-	      	background-color:#5A6E40;
 		font-family:Arbutus Slab;
 		font-style:bold;
 		font-size:4vw;
-		margin-top:0vw;
 	      	padding-top:1vw;
 		text-align:center;
 		line-height:1;
 		z-index:4;
-	      	opacity:.8;
+	      	opacity:1;
 	}
 	.tagline{
 		position:relative;
 		width:100vw;
 		color:white;
-	      	background-color:#5A6E40;
 		font-family:Arbutus Slab;
 		font-size:1.5vw;
 	      	padding-bottom: 1vw;
 		text-align:center;
 		line-height:1;
 		z-index:4;
-	      	opacity:.8;
+	      	opacity:1;
 	}
 	.navbuttons{
-		margin-top:1.5vw;
+		margin-top:.5vw;
 		position:relative;
 		width:100vw;	
 		text-align:center;
@@ -185,20 +188,25 @@
 		opacity:1;
 		z-index:1;
 	}
-	.footer{
+	#footerBackground{
 		position:fixed;
+	      	background-color:#5A6E40;	
+	      	z-index:5;
+	      	width: 100vw;
+	      	height:3vw;
+	      	bottom: 0px;
+      	}	
+      	.footer {
+      		position:fixed;
 		bottom:0px;
 		width:100vw;
-		height:1vw;
+		font-size:1vw;
 		color:white;
-		background-color:#5A6E40;
 		text-align:center;
 		line-height:1;
-		margin-top:0px
-		padding-top:0px;
-		padding-bottom:0.5vw;
-		z-index:5;
-	      	opacity:.8;
+		padding-top:1vw;
+		padding-bottom:1vw;
+		z-index:6;
 	}
 	}
 </style>
@@ -206,6 +214,7 @@
 
 <body>
 	<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/d13da45d/images/OutdoorBackground.jpg" alt="Outdoor scene" id="imageBackground"/>
+	<div id="headerBackground"></div>
 	<div class="title">BRAD DAVIS</div>
 	<div class="tagline">Simple. Clean. Code.</div>
 	<div class="navbuttons">		
@@ -216,8 +225,9 @@
 		<a href="http://www.radbraddavis.com" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/bloggernav.jpg" alt="Blog"></a>
 	</div>
 	<!--<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/Nashville.JPG" id="background">-->
-	<div class="footer">
-		<h4> Coded by Brad Davis, BradDavisTech.com 2018.</h4> 
-	</div>
+	
+ 	<div id="footerBackground"></div>
+	<h4 class="footer"> Coded by Brad Davis, BradDavisTech.com 2018.</h4> 
+	
 </body>
 </html>
