@@ -70,59 +70,56 @@
 		width: 100vw;	
 	      	opacity:1;
       	}
-      	#headerBackground{
-	      	position:relative;
-	      	top:0vw;
-	      	background-color:#5A6E40;	
-	      	z-index:3;
-	      	height:30vw;
-	      	width:100vw;
-	      	opacity:.75;
-      	}
-	.title{
-		position:absolute;
+      	.title{
+		position:relative;
 	      	width:100vw;
 		color:white;
 		font-family:Arbutus Slab;
+		background-color:#5A6E40;
 		font-style:bolder;
 	      	top:0vw;
 		font-size:10vw;
 	      	padding-top:1vw;
 		text-align:center;
 		line-height:1;
-		z-index:4;
+		z-index:10;
 	      	opacity:1;
 	}
 	.tagline{
-		position:absolute;
-	      	top:12vw;
+		position:relative;
+	      	top:0vw;
 		width:100vw;
 		color:white;
+	      	background-color:#5A6E40;
 		font-family:Arbutus Slab;
       		font-style:bolder;
 		font-size:5vw;
 	      	padding-bottom: 1vw;
 		text-align:center;
 		line-height:1;
-		z-index:4;
+		z-index:10;
 	      	opacity:1;
 	}
 	.navbuttons{
-		top: 18vw;
-		position:absolute;
+		top: 0vw;
+		position:sticky;
 		width:100vw;	
+	      	opacity: 1;
+	      	padding-top:1vw;
+	      	background-color:#5A6E40;		      
 		text-align:center;
-		z-index:4;
+		z-index:10;
 	}
 	.navbuttons a img{
-		position:relative;
-		opacity:.7;
+		border:.75vw solid white;
+	      	position:relative;
+		opacity:1;
 		margin: 0px;
 	      	width:10vw;
 		height:10vw;
-		padding-left: 5vw;
-		padding-right: 5vw;
-		border-radius:50%;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		border-radius:100%;
 		z-index:4;
 	}
 	.navbuttons a img:hover{
@@ -162,8 +159,9 @@
 	      	opacity:.5;
       	}
 	.title{
-		position:absolute;
+		position:relative;
 	      	width:100vw;
+	      	background-color:#5A6E40;
 		color:white;
 		font-family:Arbutus Slab;
 		font-style:bolder;
@@ -172,37 +170,43 @@
 	      	padding-top:1vw;
 		text-align:center;
 		line-height:1;
-		z-index:4;
+		z-index:10;
 	      	opacity:1;
 	}
 	.tagline{
-		position:absolute;
+		position:relative;
 	      	top:0vw;
 		width:100vw;
 		color:white;
+	      	background-color:#5A6E40;
 		font-family:Arbutus Slab;
       		font-style:bolder;
 		font-size:2vw;
 	      	padding-bottom: 1vw;
+	      	left:0px;
 		text-align:center;
 		line-height:1;
-		z-index:4;
+		z-index:10;
 	      	opacity:1;
 	}
 	.navbuttons{
-		top: 8vw;
-		position:absolute;
-		width:100vw;	
+		top: -.2vw;
+		position:sticky;
+	      	background-color:#5A6E40;
+	 	width:100vw;	
+	      	height:6.5vw;
 		text-align:center;
-		z-index:4;
+		z-index:10;
 	}
 	.navbuttons a img{
 		position:relative;
 		opacity:1;
+	      	border:.5vw solid white;
 		width:3.5vw;
 		height:3.5vw;
-		padding-left: 4vw;
-		padding-right: 4vw;
+	      	margin-top:1vw;
+		margin-left: 4vw;
+		margin-right: 4vw;
 		border-radius:50%;
 		z-index:4;
 	}
@@ -216,8 +220,8 @@
 	      	width: 100vw;
 	      	height:3.5vw;
 	      	bottom: 0px;
-	      	opacity:.5;
-      	}	
+	      	opacity:1;
+      	}
       	.footer {
       		position:fixed;
 		bottom:0px;
