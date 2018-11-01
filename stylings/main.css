@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+#navBar {
+  width: 100%;
+  top: 0px;
+  text-align: right;
+  position: fixed;
+  right: 0px;
+  z-index: 5;
+}
+.navButton {
+  position: relative;
+  height: 4vw;
+  background-color: white;
+  border-radius: 2vw;
+  padding-bottom: 1px;
+  right: 2vw;
+  margin: 2vw;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+  z-index: 5;
+}
+#backgroundImage {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 35%;
+}
+#nameBlock {
+  color: white;
+  position: relative;
+  top: 10vw;
+  width: 50%;
+  left: 5%;
+  z-index: 4;
+}
+#nameTitle {
+  font-size: 9vw;
+  font-weight: bold;
+}
+#jobTitle {
+  font-size: 4.5vw;
+  font-weight: bold;
+  display: inline;
+}
+#cursor {
+  display: inline;
+  font-size: 3vw;
+}
+#mainInfo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 1%;
+  margin-left: 14%;
+  color: black;
+  width: 30%;
+  font-weight: bold;
+  font-size: 2vw;
+  border-radius: 21px;
+  background-color: white; */
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  animation-duration: .8s;
+}
+.mainMenuOptions {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 1%;
+  margin-left: 14%;
+  color: black;
+  width: 48%;
+  font-weight: bold;
+  font-size: 2vw;
+  border-radius: 21px;
+  background-color: white;
+}
+#homeIcon {
+  position: fixed;
+  height: 4vw;
+  padding-bottom: 1px;
+  left: 1vw;
+  margin: 2vw;
+  margin-top: .75vw;
+  margin-bottom: .5vw;
+  z-index: 5;
+}
+.indivPort {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 7vw;
+  margin-bottom: 4vw;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+}
+.portfolioPic {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 37%;
+}
+.portfolioTitle {
+  background-color: white;
+}
+.itemDescription {
+  background-color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 1vw;
+  padding-bottom: 0px;
+}
+.github {
+  background-color: white;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+}
+.languageTitle {
+  display: block;
+  background-color: white;
+  font-weight: bold;
+}
+.languages {
+  font-weight: bold;
+    background-color: white;
+    display: inline-flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: .25vw;
+}
