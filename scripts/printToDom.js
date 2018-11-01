@@ -3,7 +3,7 @@ const ALERT = require("./construction");
 
 const infoCategories = [
   {
-    name: "Personal Test 2 Portfolio",
+    name: "Personal Portfolio",
     id: "Portfolio",
   },
   {
