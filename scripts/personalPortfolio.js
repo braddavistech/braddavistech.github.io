@@ -4,14 +4,21 @@ const portfolioItems = [
     text: "This was a project that I created at Nashville Software School. It allows the user to input journal entries and select an instructor, a mood, and tag names. It saves the entries through an API Post call and then uses Fetch to grab all entries and render to the page. It also allows the user to sort their entries through the moods input.",
     github: "https://github.com/braddavistech/NSS_Daily_Journal",
     languages: ["JavaScript", "jQuery", "HTML", "CSS", "Github", "Git", "Grunt", "Node", "Slack", "VS"],
-    img: [
-      {
-        location: "../images/dj1.jpg"
-      },
-      {
-        location: "../images/dj2.jpg"
-      }
-    ]
+    img: ["../images/dj1.jpg", "../images/dj2.jpg"]
+  },
+  {
+    name: "Welcome to Nashville",
+    text: "This was a project that my team created at Nashville Software School. It allows the user to search for restaurants, Ticketmaster events, Metro-Nashville parks, and Eventbrite events. This application uses continuous API calls to the different databases to get up-to-date information. It also has the ability to save your created itineraries and display past itineraries through a local json file.",
+    github: "https://github.com/braddavistech/Welcome_To_Nashville",
+    languages: ["JavaScript", "HTML", "CSS", "Github", "Git", "Grunt", "Node", "Slack", "VS"],
+    img: ["../images/nashville1.jpg", "../images/nashville2.jpg"]
+  },
+  {
+    name: "Lift Calculator",
+    text: "This was a project that was my first experience with JavaScript. It allows a user to input data related to an aircraft's flight properties and atmospheric conditions to return the amount of lift that this aircraft would have. This application is a single-file application with stylings and script inside of the HTML.",
+    github: "https://github.com/braddavistech/AerodynamicsAndLiftCalculator",
+    languages: ["JavaScript", "HTML", "CSS", "Github", "Atom"],
+    img: ["../images/liftCalc.jpg"]
   }
 ];
 
@@ -30,7 +37,7 @@ const PORTFOLIO = {
         <h1 class="portfolioTitle">${item.name}</h1>`;
       item.img.forEach(pic => {
         portfolioEntry += `
-        <img class="portfolioPic" src="${pic.location}">`;
+        <img class="portfolioPic" src="${pic}">`;
       });
       portfolioEntry += `
         <p class="itemDescription">${item.text}</p>
@@ -69,6 +76,9 @@ const PORTFOLIO = {
             break;
           case "VS":
             portfolioEntry += `<img src="../images/vsimage.jpg" class="languagePic" alt="${language}">`;
+            break;
+          case "Atom":
+            portfolioEntry += `<img src="../images/atomimage.jpg" class="languagePic" alt="${language}">`;
             break;
         }
 
