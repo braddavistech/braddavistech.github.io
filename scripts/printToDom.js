@@ -1,7 +1,7 @@
 const PORTFOLIO = require("./personalPortfolio");
 const ALERT = require("./construction");
 
-infoCategories = [
+const infoCategories = [
   {
     name: "Personal Portfolio",
     id: "Portfolio",
@@ -45,7 +45,7 @@ const PRINTINFO = {
           textPosition++;
           setTimeout(typeWriter, setTypeSpeed); /* SETS THE DELAY TO RUN THE FUNCTION */
         } else {
-          runtTypeWriter = false;
+          runTypeWriter = false;
           cursorEffect.innerHTML = "";
           PRINTINFO.optionsButton();
         }

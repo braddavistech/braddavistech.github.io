@@ -84,7 +84,6 @@ const PORTFOLIO = {
             portfolioEntry += `<img src="../images/browserifyimage.jpg" class="languagePic" alt="${language}">`;
             break;
         }
-
       });
       portfolioEntry += `<a href="${item.github}" class="github" target="blank">See Github Code</a></div>`;
       placeHolder.innerHTML += portfolioEntry;
