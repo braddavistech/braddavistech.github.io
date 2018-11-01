@@ -11,16 +11,21 @@
   right: 0px;
   z-index: 5;
 }
+.navbarA {
+  margin: 0px;
+  padding: 0px;
+}
 .navButton {
   position: relative;
-  height: 4vw;
+  height: 3vw;
   background-color: white;
-  border-radius: 2vw;
-  padding-bottom: 1px;
+  border-radius: 1.75vw;
+  padding: 1px;
+  padding-bottom: 2px;
   right: 2vw;
   margin: 2vw;
   margin-top: .5vw;
-  margin-bottom: .5vw;
+  margin-bottom: 0.25vw;
   z-index: 5;
 }
 #backgroundImage {
@@ -124,7 +129,7 @@
 }
 #homeIcon {
   position: fixed;
-  height: 4vw;
+  height: 3vw;
   padding-bottom: 1px;
   left: 1vw;
   margin: 2vw;
@@ -152,7 +157,7 @@
 }
 .itemDescription {
   background-color: white;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   padding: 1vw;
   padding-bottom: 0px;
@@ -170,12 +175,11 @@
   display: block;
   background-color: white;
   font-weight: bold;
+  padding-top: 1vw;
 }
-.languages {
-  font-weight: bold;
-    background-color: white;
-    display: inline-flex;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: .25vw;
+.languagePic {
+  background-color: white;
+  display: inline-flex;
+  width: 6%;
+  margin: 1.5%;
 }
