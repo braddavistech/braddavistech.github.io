@@ -46,14 +46,14 @@ const portfolioItems = [
     name: "Daily Journal",
     text: "This was a project that I created at Nashville Software School. It allows the user to input journal entries and select an instructor, a mood, and tag names. It saves the entries through an API Post call and then uses Fetch to grab all entries and render to the page. It also allows the user to sort their entries through the moods input.",
     github: "https://github.com/braddavistech/NSS_Daily_Journal",
-    languages: ["JavaScript", "jQuery", "HTML", "CSS", "Github", "Git", "Grunt", "Node", "Slack", "VS"],
+    languages: ["JavaScript", "jQuery", "HTML", "CSS", "Github", "Browserify", "Git", "Grunt", "Node", "Slack", "VS"],
     img: ["../images/dj1.jpg", "../images/dj2.jpg"]
   },
   {
     name: "Welcome to Nashville",
     text: "This was a project that my team created at Nashville Software School. It allows the user to search for restaurants, Ticketmaster events, Metro-Nashville parks, and Eventbrite events. This application uses continuous API calls to the different databases to get up-to-date information. It also has the ability to save your created itineraries and display past itineraries through a local json file.",
     github: "https://github.com/braddavistech/Welcome_To_Nashville",
-    languages: ["JavaScript", "HTML", "CSS", "Github", "Git", "Grunt", "Node", "Slack", "VS"],
+    languages: ["JavaScript", "HTML", "CSS", "Github", "Browserify", "Git", "Grunt", "Node", "Slack", "VS"],
     img: ["../images/nashville1.jpg", "../images/nashville2.jpg"]
   },
   {
@@ -122,6 +122,9 @@ const PORTFOLIO = {
             break;
           case "Atom":
             portfolioEntry += `<img src="../images/atomimage.jpg" class="languagePic" alt="${language}">`;
+            break;
+          case "Browserify":
+            portfolioEntry += `<img src="../images/browserifyimage.jpg" class="languagePic" alt="${language}">`;
             break;
         }
 

@@ -180,6 +180,7 @@
 .languagePic {
   background-color: white;
   display: inline-flex;
+  vertical-align: middle;
   width: 6%;
   margin: 1.5%;
 }
