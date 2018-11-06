@@ -17,14 +17,15 @@ const infoCategories = [
   {
     name: "Resume",
     id: "Resume",
+    location: "../images/Brad Davis 2019.pdf"
   }
 ];
 
 const PRINTINFO = {
-  nameBlock () {
+  nameBlock() {
     $("#nameBlock").html("<p id=\"nameTitle\">Brad Davis</p>")
   },
-  jobTitle () {
+  jobTitle() {
     let placeHolder = document.getElementById("nameBlock");
     let newElement = document.createElement("p");
     newElement.setAttribute("id", "jobTitle");
@@ -51,71 +52,81 @@ const PRINTINFO = {
         }
       }
     }
-    typeWriter ();
+    typeWriter();
   },
-  optionsButton () {
+  optionsButton() {                               //sets more info button
     let placeHolder = document.getElementById("nameBlock");
     let deleteButtons = document.querySelectorAll(".mainMenuOptions");
-    if (deleteButtons.length === 0) {
-    let newElement = document.createElement("input");
-    newElement.setAttribute("type", "button");
-    newElement.setAttribute("class", "mainMenuOptions fadeIn");
-    newElement.setAttribute("id", "mainInfo");
-    newElement.setAttribute("value", "More Info");
-    placeHolder.appendChild(newElement);
-    document.getElementById("mainInfo").addEventListener("click", PRINTINFO.moreInfo);
-    } else {
-    deleteButtons.forEach(button => {
-      if (button.id !== "mainInfo") {
-        button.parentElement.removeChild(button)
-      } else {
-        button.setAttribute("value", "More Info");
-        button.classList.remove("fadeOut");
-        document.getElementById("mainInfo").removeEventListener("click", PRINTINFO.fadeOut);
-      }
-    });
-    document.getElementById("mainInfo").addEventListener("click", PRINTINFO.moreInfo);
+    if (deleteButtons.length === 0) {               //checks to see if more info button is the only button
+      let newElement = document.createElement("input");
+      newElement.setAttribute("type", "button");
+      newElement.setAttribute("class", "mainMenuOptions fadeIn");
+      newElement.setAttribute("id", "mainInfo");
+      newElement.setAttribute("value", "More Info");
+      placeHolder.appendChild(newElement);
+      document.getElementById("mainInfo").addEventListener("click", PRINTINFO.moreInfo);
+    } else {                                      //removes all buttons and resume anchor from DOM
+      let resume = document.getElementById("Resume");
+      resume.parentNode.removeChild(resume);
+      deleteButtons.forEach(button => {
+        if (button.id !== "mainInfo") {
+          button.parentElement.removeChild(button);
+        } else {
+          button.classList.remove("fadeOut");  //removes fadeOut animation from mainInfo button
+          document.getElementById("mainInfo").removeEventListener("click", PRINTINFO.fadeOut);
+        }
+      });
+      document.getElementById("mainInfo").addEventListener("click", PRINTINFO.moreInfo);
     }
   },
-  fadeOut () {
+  fadeOut() {         //fades out all buttons and anchor except more info
+    document.getElementById("mainInfo").setAttribute("value", "More Info");
+    let resume = document.getElementById("Resume");
+    resume.classList.replace("fadeIn", "fadeOut");
     let deleteButtons = document.querySelectorAll(".mainMenuOptions");
     deleteButtons.forEach(button => {
       if (button.id !== "mainInfo") {
         button.classList.replace("fadeIn", "fadeOut");
       }
     });
-    setTimeout(PRINTINFO.optionsButton, 700);
+    setTimeout(PRINTINFO.optionsButton, 700); //sets pause to allow fadeOut animation to finish
   },
-  moreInfo () {
+  moreInfo() {      //creates link buttons and anchor
     let placeHolder = document.getElementById("nameBlock");
     document.getElementById("mainInfo").setAttribute("value", "Hide Menu");
     document.getElementById("mainInfo").removeEventListener("click", PRINTINFO.moreInfo);
     document.getElementById("mainInfo").addEventListener("click", PRINTINFO.fadeOut);
     infoCategories.forEach(category => {
-      let infoCategory = document.createElement("input");
-      infoCategory.setAttribute("type", "button");
-      infoCategory.setAttribute("id", category.id);
-      infoCategory.setAttribute("class", "mainMenuOptions fadeIn");
-
-      infoCategory.setAttribute("value", category.name);
-      placeHolder.appendChild(infoCategory);
+      if (category.id !== "Resume") {
+        let infoCategory = document.createElement("input");
+        infoCategory.setAttribute("type", "button");
+        infoCategory.setAttribute("id", category.id);
+        infoCategory.setAttribute("class", "mainMenuOptions fadeIn");
+        infoCategory.setAttribute("value", category.name);
+        placeHolder.appendChild(infoCategory);
+      } else if (category.id === "Resume") {
+        let infoCategory = document.createElement("a");
+        infoCategory.setAttribute("id", category.id);
+        infoCategory.setAttribute("class", "fadeIn");
+        infoCategory.setAttribute("href", category.location);
+        infoCategory.setAttribute("target", "blank");
+        infoCategory.innerHTML = "View Resume";
+        placeHolder.appendChild(infoCategory);
+      }
     });
-    infoCategories.forEach(button => {
-      switch(button.id) {
+    infoCategories.forEach(button => {  //adds event listeners to buttons
+      switch (button.id) {
         case "Portfolio":
           document.getElementById("Portfolio").addEventListener("click", PORTFOLIO.printItems);
           break;
         case "Websites":
-        document.getElementById("Websites").addEventListener("click", ALERT.message);
+          document.getElementById("Websites").addEventListener("click", ALERT.message);
           break;
         case "Bio":
-        document.getElementById("Bio").addEventListener("click", ALERT.message);
-          break;
-        case "Resume":
-        document.getElementById("Resume").addEventListener("click", ALERT.message);
+          document.getElementById("Bio").addEventListener("click", ALERT.message);
           break;
       }
-   });
+    });
   }
 };
 
