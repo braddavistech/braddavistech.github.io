@@ -121,7 +121,21 @@
   margin-top: 1%;
   margin-left: 14%;
   color: black;
-  width: 50%;
+  width: 25vw;
+  font-weight: bold;
+  font-size: 2vw;
+  border-radius: 21px;
+  background-color: white;
+}
+#Resume {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 1%;
+  margin-left: 14%;
+  color: black;
+  width: 24vw;
   font-weight: bold;
   font-size: 2vw;
   border-radius: 21px;
