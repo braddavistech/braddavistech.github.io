@@ -2,7 +2,7 @@ const portfolioItems = [
   {
     name: "Mission Control",
     text: "This was a project that I created with a group of 3 other students at Nashville Software School. It allows users to log in or create new user and queries the database to check for current user matches. I am particularly proud of the logic behind user validation during login, user creation, and profile editing. I also created an epic ReadMe file on Github, which was my fist exposure to markdown language.",
-    github: "https://github.com/nss-mission-control/nutshell",
+    github: "https://github.com/braddavistech/Mission_Control",
     languages: ["Node", "JavaScript", "jQuery", "Moment", "Restful", "NSS", "HTML", "CSS", "ESLint", "Github", "Browserify", "Lucid Charts", "Babel", "Git", "Grunt", "Slack", "VS"],
     img: ["../images/missionControl1.png", "../images/missionControl2.png"]
   },
