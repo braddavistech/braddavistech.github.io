@@ -1,5 +1,12 @@
 const portfolioItems = [
   {
+    name: "Mission Control",
+    text: "This was a project that I created with a group of 3 other students at Nashville Software School. It allows users to log in or create new user and queries the database to check for current user matches. I am particularly proud of the logic behind user validation during login, user creation, and profile editing. I also created an epic ReadMe file on Github, which was my fist exposure to markdown language.",
+    github: "https://github.com/nss-mission-control/nutshell",
+    languages: ["Node", "JavaScript", "jQuery", "Moment", "Restful", "NSS", "HTML", "CSS", "ESLint", "Github", "Browserify", "Lucid Charts", "Babel", "Git", "Grunt", "Slack", "VS"],
+    img: ["../images/missionControl1.png", "../images/missionControl2.png"]
+  },
+  {
     name: "Daily Journal",
     text: "This was a project that I created at Nashville Software School. It allows the user to input journal entries and select an instructor, a mood, and tag names. It saves the entries through an API Post call and then uses Fetch to grab all entries and render to the page. It also allows the user to sort their entries through the moods input.",
     github: "https://github.com/braddavistech/NSS_Daily_Journal",
@@ -47,6 +54,9 @@ const PORTFOLIO = {
           case "JavaScript":
             portfolioEntry += `<img src="../images/jsimage.jpg" class="languagePic" alt="${language}">`;
             break;
+          case "Babel":
+            portfolioEntry += `<img src="../images/babeljs.png" class="languagePic" alt="${language}">`;
+            break;
           case "CSS":
             portfolioEntry += `<img src="../images/css3image.jpg" class="languagePic" alt="${language}">`;
             break;
@@ -55,6 +65,12 @@ const PORTFOLIO = {
             break;
           case "Git":
             portfolioEntry += `<img src="../images/gitimage.jpg" class="languagePic" alt="${language}">`;
+            break;
+          case "Moment":
+            portfolioEntry += `<img src="../images/momentjs.jpg" class="languagePic" alt="${language}">`;
+            break;
+          case "ESLint":
+            portfolioEntry += `<img src="../images/eslint.png" class="languagePic" alt="${language}">`;
             break;
           case "Grunt":
             portfolioEntry += `<img src="../images/gruntimage.jpg" class="languagePic" alt="${language}">`;
@@ -65,11 +81,20 @@ const PORTFOLIO = {
           case "jQuery":
             portfolioEntry += `<img src="../images/jQueryimage.jpg" class="languagePic" alt="${language}">`;
             break;
+          case "Lucid Charts":
+            portfolioEntry += `<img src="../images/lucidchart.png" class="languagePic" alt="${language}">`;
+            break;
           case "Node":
             portfolioEntry += `<img src="../images/nodeimage.jpg" class="languagePic" alt="${language}">`;
             break;
+          case "NSS":
+            portfolioEntry += `<img src="../images/nssjs.jpg" class="languagePic" alt="${language}">`;
+            break;
           case "React":
             portfolioEntry += `<img src="../images/reactimage.jpg" class="languagePic" alt="${language}">`;
+            break;
+          case "Restful":
+            portfolioEntry += `<img src="../images/RESTfil-API.png" class="languagePic" alt="${language}">`;
             break;
           case "Slack":
             portfolioEntry += `<img src="../images/slackimage.jpg" class="languagePic" alt="${language}">`;

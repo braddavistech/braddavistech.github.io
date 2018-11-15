@@ -32,11 +32,11 @@ const PRINTINFO = {
     placeHolder.appendChild(newElement);
     let cursorEffect = document.createElement("p");
     cursorEffect.setAttribute("id", "cursor");
-    cursorEffect.innerHTML = "&UnderBracket;";
+    cursorEffect.innerHTML = "&lowbar;";
     placeHolder.appendChild(cursorEffect);
     let runTypeWriter = true;
     let textPosition = 0;
-    let jobTitleText = "Junior Web Developer";
+    let jobTitleText = "Software Developer";
     let setTypeSpeed = 165; /* SET THE SPEED OF THE TEXT APPEARING*/
     function typeWriter() {
       if (runTypeWriter === true) {
