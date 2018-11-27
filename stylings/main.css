@@ -62,11 +62,10 @@
   margin-top: 1%;
   margin-left: 14%;
   color: black;
-  width: 30%;
-  font-weight: bold;
-  font-size: 2vw;
+  width: 100px;
+  font-size: 15px;
   border-radius: 21px;
-  background-color: white; */
+  background-color: white; 
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -121,23 +120,21 @@
   margin-top: 1%;
   margin-left: 14%;
   color: black;
-  width: 25vw;
-  font-weight: bold;
-  font-size: 2vw;
+  width: 186px;
+  font-size: 14px;
   border-radius: 21px;
   background-color: white;
+  font-family: 'Black Han Sans', sans-serif;
 }
 #Resume {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  padding: 5px;
   margin-top: 1%;
   margin-left: 14%;
   color: black;
-  width: 24vw;
-  font-weight: bold;
-  font-size: 2vw;
+  width: 175px;
+  font-size: 14px;
   border-radius: 21px;
   background-color: white;
 }

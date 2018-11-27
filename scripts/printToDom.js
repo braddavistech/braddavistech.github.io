@@ -69,9 +69,11 @@ const PRINTINFO = {
       let resume = document.getElementById("Resume");
       resume.parentNode.removeChild(resume);
       deleteButtons.forEach(button => {
-        if (button.id !== "mainInfo") {
+        if (button.id === "Resume") {
+          return ;
+        } else if (button.id !== "mainInfo") {
           button.parentElement.removeChild(button);
-        } else {
+        } else if (button.id === "mainInfo") {
           button.classList.remove("fadeOut");  //removes fadeOut animation from mainInfo button
           document.getElementById("mainInfo").removeEventListener("click", PRINTINFO.fadeOut);
         }
@@ -107,7 +109,7 @@ const PRINTINFO = {
       } else if (category.id === "Resume") {
         let infoCategory = document.createElement("a");
         infoCategory.setAttribute("id", category.id);
-        infoCategory.setAttribute("class", "fadeIn");
+        infoCategory.setAttribute("class", "mainMenuOptions fadeIn");
         infoCategory.setAttribute("href", category.location);
         infoCategory.setAttribute("target", "blank");
         infoCategory.innerHTML = "View Resume";
