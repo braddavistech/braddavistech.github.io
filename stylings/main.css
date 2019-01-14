@@ -65,7 +65,7 @@
   width: 100px;
   font-size: 15px;
   border-radius: 21px;
-  background-color: white; 
+  background-color: white;
 }
 @-webkit-keyframes fadeIn {
   from {
@@ -163,6 +163,13 @@
   margin-right: 5%;
   width: 37%;
   vertical-align: middle;
+}
+.video-section {
+  width: 95%;
+  margin-left: 2.5%;
+}
+.portfolioVideo {
+  width: 95%;
 }
 .portfolioTitle {
   background-color: white;
